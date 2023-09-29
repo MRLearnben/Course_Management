@@ -1,0 +1,150 @@
+/* Reset some default browser styles */
+body, h1, h2, ul, form {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url();
+    margin: 20px;
+}
+
+/* Style the header */
+/* Style the header with animation */
+/* Style the header with animation */
+/* Style the header with animations */
+/* Style the header with animations */
+h1 {
+    background-image: linear-gradient(45deg, #FF5733, #FF33FF, #33FF57);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    background-size: 200% 200%;
+    animation: headerMove 4s linear infinite alternate,
+               headerColorChange 6s linear infinite alternate;
+}
+
+/* Define the header movement animation */
+@keyframes headerMove {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(20px); /* Adjust the distance as needed */
+    }
+}
+
+/* Define the header color change animation */
+@keyframes headerColorChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+
+/* Style section headers with animations */
+h2 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+    text-transform: uppercase;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Add a simple animation for section headers */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Style the forms with a background gradient */
+form {
+    background: linear-gradient(135deg, #f7a54e, #f77027);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-style: oblique;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Add a hover effect to forms */
+form:hover {
+    transform: scale(1.05);
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Add a hover effect to buttons */
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Style the course list */
+#courses {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#course-list {
+    list-style: none;
+    padding: 0;
+}
+
+#course-list li {
+    margin-bottom: 5px;
+    background-color: #f7f7f7;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Add a hover effect to course list items */
+#course-list li:hover {
+    background-color: #e0e0e0;
+}
